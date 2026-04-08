@@ -44,6 +44,8 @@ mcp = FastMCP("shopify_mcp", host="0.0.0.0", port=PORT, json_response=True)
 import secrets
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
+from fastmcp.server.middleware import Middleware, MiddlewareContext
+
 
 BEARER_TOKEN = os.environ.get("BEARER_TOKEN", "")
 
