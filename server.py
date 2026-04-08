@@ -55,7 +55,7 @@ class BearerAuthMiddleware(BaseHTTPMiddleware):
                 return Response("Unauthorized", status_code=401)
         return await call_next(request)
 
-mcp.app.add_middleware(BearerAuthMiddleware)
+mcp.add_middleware(BearerAuthMiddleware)
 
 
 # ---------------------------------------------------------------------------
