@@ -20,6 +20,8 @@ import httpx
 from pydantic import BaseModel, Field, ConfigDict, field_validator
 from mcp.server.fastmcp import FastMCP
 
+
+
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
@@ -44,6 +46,7 @@ mcp = FastMCP("shopify_mcp", host="0.0.0.0", port=PORT, json_response=True)
 import secrets
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
+from fastmcpForMiddleware import FastMCP
 from fastmcp.server.middleware import Middleware, MiddlewareContext
 
 
