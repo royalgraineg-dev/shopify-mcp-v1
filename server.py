@@ -47,7 +47,7 @@ import secrets
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
 from fastmcpForMiddleware import FastMCP
-from fastmcp.server.middleware import Middleware, MiddlewareContext
+from fastmcpForMiddleware.server.middleware import Middleware, MiddlewareContext
 
 
 BEARER_TOKEN = os.environ.get("BEARER_TOKEN", "")
